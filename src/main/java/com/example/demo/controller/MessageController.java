@@ -19,6 +19,7 @@ public class MessageController {
 	@Autowired
 	DispatcherService dispatcherService;
 	
+	//Post new messages
 	@PostMapping(value="/send")
 	public ResponseEntity<String> send(@RequestBody String message){
 		
@@ -26,5 +27,4 @@ public class MessageController {
 		
 		return new ResponseEntity<String>("Messae sent: "+message, HttpStatus.OK);
 	}
-
 }
