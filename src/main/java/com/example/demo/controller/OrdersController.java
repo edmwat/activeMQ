@@ -16,7 +16,6 @@ public class OrdersController {
 	public String getOrderList() {
 		String returnMessage ="This is the expected return message";
 		return returnMessage;
-
 	}
 
 }
