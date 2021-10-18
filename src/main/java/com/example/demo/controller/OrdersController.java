@@ -8,7 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value="/api")
 public class OrdersController {
 
-	public void postOrder() {
+
+	public void postOrder() {}
+
+
+	@GetMapping 
+	public String getOrderList() {
+		String returnMessage ="This is the expected return message";
+		return returnMessage;
 
 	}
 
